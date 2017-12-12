@@ -28,7 +28,7 @@ img{max-width:100%;}
 body{
 padding:0;
 margin:0;
-    background:url(../images/bg.jpg) no-repeat center;
+    background:url(../images/bg.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -156,6 +156,74 @@ p.copy_rights a:hover{
 }
 
 
+.footer {
+bottom: 0;
+margin: 0 auto !important;
+text-align: center !important;
+width: 100% !important;
+position: absolute; 
+}
+
+a:active,a:focus{
+    outline:0;
+}
+
+
+#fb{
+    color:white;
+    background color:
+}
+.end{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 5px;
+    overflow: hidden;
+}
+#contact{
+    background-color:rgba(0,0,0,0.5);
+    padding:20px;
+}
+.fa {
+  font-size: 5vh;
+  width: 10vh;
+  height: 10vh;
+  text-decoration: none;
+  border-radius: 50%;
+  border:2px solid white;
+  padding-top: 2vh;
+}
+.fa:hover {    
+     background-color: rgba(239,240,242,00.9);
+
+}
+
+.fa-facebook {
+  color: #3B5998;
+}
+.fa-linkedin{
+  color: #0077B5;
+}
+.fa-github{
+ color:white;   
+}
+.fa-github:hover{
+    color:#171515;
+}
+.fa-free-code-camp{
+    color:green;
+}
+.fa-quora{
+    color:#B92B27;
+}
+
+.fa-youtube{
+	color:white;
+}
+
+.fa-youtube:hover{
+	color:#bb0000;
+}
 
 /*-- responsive media queries --*/
 
@@ -227,6 +295,10 @@ p.copy_rights a:hover{
 		margin: 0 3%;
 		height: inherit !important;
 	}	
+	#contact{
+    background-color:rgba(0,0,0,0.8);
+    padding:20px;
+	}
 }
 @media (max-width: 800px){
 	.subscribe input[type="email"] {
@@ -301,6 +373,27 @@ p.copy_rights a:hover{
 	body {
 		min-height: 533px;
 	}	
+
+	#contact{
+	    background-color:rgba(0,0,0,0.8);
+	    padding:0;
+	    padding-top:2vh;
+	    margin:0;
+	}
+	
+	.fa {
+	  font-size: 2.5vh;
+	  width: 6vh;
+	  height: 6vh;
+	  text-decoration: none;
+	  border-radius: 50%;
+	  border:2px solid white;
+	  padding-top: 1.4vh;
+      margin:0 -1vh;
+
+
+	}
+
 }
 @media (max-width: 640px){
 	.ClassyCountdown-value{
@@ -324,6 +417,7 @@ p.copy_rights a:hover{
 	.subscribe input[type="email"] {
 		width: 65%;
 	}
+
 }
 @media (max-width: 568px){
 	
@@ -441,73 +535,10 @@ p.copy_rights a:hover{
 	body {
 		min-height: 484px;
 	}
+	.fa {
+	  margin:0 -1.5vh;
+	}
 }
 
 /*-- responsive media queries --*/
 
-a:active,a:focus{
-    outline:0;
-}
-
-
-#fb{
-    color:white;
-    background color:
-}
-.end{
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    padding-top: 5px;
-    overflow: hidden;
-}
-#contact{
-    background-color:rgba(0,0,0,0.3);
-    padding:20px;
-}
-.fa {
-  font-size: 32px;
-  width: 65px;
-  text-decoration: none;
-  border-radius: 50%;
-  border:2px solid white;
-}
-.fa:hover {    
-     background-color: rgba(239,240,242,00.9);
-
-}
-
-.fa-facebook {
-  color: #3B5998;
-  padding: 15px;
-}
-.fa-linkedin{
- padding: 15px 10px 15px 10px;
-  color: #0077B5;
-}
-.fa-github{
- color:white;   
- padding: 15px;
-}
-.fa-github:hover{
-    color:#171515;
-}
-.fa-free-code-camp{
-    color:green;
-    padding:15px 15px 15px 10px;
-}
-.fa-quora{
-    color:#B92B27;
-    padding: 15px;
-}
-
-.fa-youtube{
-	color:white;
-	backgrund:none;
-	padding: 15px;
-}
-
-.fa-youtube:hover{
-	color:#bb0000;
-	padding: 15px;
-}

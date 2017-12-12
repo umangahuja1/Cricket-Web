@@ -25,6 +25,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 </head>
 <body>
+    <div class="container-fluid">
     <div class="layer">
     <div class="content">
         <h1>{{ match['match'] }}</h1><br>
@@ -35,19 +36,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
     </div>
 		
-    <footer id="contact">
+    <footer id="contact" class="footer">
+        <div class="container-fluid text-center">
             <p class="copy_rights">&copy; 2017 Get Set Python | All Rights Reserved </p>
-        <div class="end text-center">
-            <a href="https://www.freecodecamp.com/umangahuja1" class="btn btn" id="fcc" target="_blank" ><i class="fa fa-free-code-camp"></i>  </a>
+        <div class="end">
+            <a href="https://www.freecodecamp.com/umangahuja1" class="btn btn " id="fcc" target="_blank" ><i class="fa fa-free-code-camp fa-circle"></i>  </a>
             <a href="https://www.facebook.com/umang.ahuja.1" class="btn" id="fb" target="_blank"><i class="fa fa-facebook"></i>  </a>
             <a href="https://www.linkedin.com/in/umang-ahuja-260140110/" class="btn" target="_blank" ><i class="fa fa-linkedin"></i>  </a>
             <a href="https://github.com/umangahuja1" id="gt"  class="btn" target="_blank"><i class="fa fa-github"></i>  </a>
             <a href="https://www.quora.com/profile/Umang-Ahuja" class="btn" id="quora" target="_blank" ><i class="fa fa-quora fa-circle"></i>  </a>
             <a href="https://www.youtube.com/channel/UC2R1v4d75yXisbufyoLYryA" class="btn" id="youtube" target="_blank" ><i class="fa fa-youtube fa-circle"></i>  </a>
-            
         </div>
+    </div>
         </footer>
     </div>
+</div>
             	<script src="{{ url_for('static', filename = 'js/jquery.min.js') }}"></script>
 				<script src="{{ url_for('static', filename = 'js/jquery.knob.js') }}"></script>
 				<script src="{{ url_for('static', filename = 'js/jquery.throttle.js') }}"></script>
