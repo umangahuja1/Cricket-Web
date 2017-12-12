@@ -538,7 +538,7 @@ a:active,a:focus{
 
 /*-- responsive media queries --*/
 
-body{
+html,body{
 	overflow: hidden;
 	max-height: 100%;
 }
