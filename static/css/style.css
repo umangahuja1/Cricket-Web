@@ -295,6 +295,10 @@ a:active,a:focus{
     background-color:rgba(0,0,0,0.8);
     padding:20px;
 	}
+
+	.ClassyCountdown-value span {
+		font-size: 14px !important;
+	}
 }
 @media (max-width: 800px){
 	.subscribe input[type="email"] {
@@ -434,13 +438,16 @@ a:active,a:focus{
 	.ClassyCountdown-value {
 		font-size: 30px !important;
 	}
+	.ClassyCountdown-value span{
+		font-size:12px !important;
+	}
 }
 @media (max-width: 414px){
 	.ClassyCountdown-value {
 		font-size: 26px !important;
 	}
 	.ClassyCountdown-value span{
-		font-size:13px !important;
+		font-size:11.5px !important;
 	}
 	.contact-form {
 		width: 100%;
@@ -487,7 +494,10 @@ a:active,a:focus{
 	}
 	body {
 		min-height: 605px;
-	}	
+	}		
+	.ClassyCountdown-value span {
+		font-size: 11px !important;
+	}
 }
 @media (max-width: 375px){
 	.content h1 {
@@ -495,7 +505,11 @@ a:active,a:focus{
 	}
 	.subscribe input[type="email"] {
 		width: 64%;
-	}	
+	}
+
+	.ClassyCountdown-value span {
+		font-size: 10px !important;
+	}
 }
 @media (max-width: 320px){
 	.content h1 {
@@ -514,10 +528,10 @@ a:active,a:focus{
 		line-height: 0.8em;
 	}
 	.ClassyCountdown-value {
-		font-size: 23px !important;
+		font-size: 20px !important;
 	}
 	.ClassyCountdown-value span {
-		font-size: 12px !important;
+		font-size: 10px !important;
 	}
 	.main {
 		margin: 50px auto 43px;
