@@ -541,4 +541,5 @@ a:active,a:focus{
 html,body{
 	overflow: hidden;
 	height: 100%;
+	position: relative;
 }
