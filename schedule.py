@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 import requests
 import calendar
+import pytz
 
 
 def scrape():
@@ -46,9 +47,10 @@ def Schedule():
             time = item['tm']
 
             match_time, indian_time, month, year = to_indian_time(date, month_year, time)
-            current_time = datetime.now()
-            print(match_time, "....", indian_time, ".....", current_time)
-            if(current_time < match_time):
+            india = pytz.timezone('Asia/Kolkata')
+            current_time = str(datetime.now(india)).split('+')[0]
+            #print(match_time, "....", indian_time, ".....", current_time)
+            if(current_time < str(match_time)):
                 result.append({
                     'match': match,
                     'series': series,
@@ -65,6 +67,6 @@ def Schedule():
 
 
 if __name__ == '__main__':
-    pass
+
     Schedule()
     # print(Schedule())
