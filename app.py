@@ -3,11 +3,10 @@ from schedule import Schedule
 
 app = Flask('__name__')
 
-match = Schedule()
-
 
 @app.route('/')
 def index():
+    match = Schedule()
     return render_template('index.html', match=match)
 
 
