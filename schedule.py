@@ -20,7 +20,7 @@ def scrape():
 def to_indian_time(date, month_year, time):
     hour, minute = int(time.split(':')[0]), int(time.split(':')[1])
     minute = (minute + 30) % 60
-    hour = hour + 5 + int(minute / 60)
+    hour = (hour + 5 + int(minute / 60)) % 24
 
     indian_time = str(hour) + ":"
     if minute < 10:
@@ -45,7 +45,6 @@ def Schedule():
             date = item['ddt']
             month_year = item['mnth_yr']
             time = item['tm']
-
             match_time, indian_time, month, year = to_indian_time(date, month_year, time)
             india = pytz.timezone('Asia/Kolkata')
             current_time = str(datetime.now(india)).split('+')[0]
