@@ -38,7 +38,8 @@ def to_indian_time(date, month_year, time):
 def Schedule():
     data = scrape()
     result = []
-    for item in data[:50]:
+
+    for item in data[:]:
         if 'Ind' in item['desc']:
             match = item['desc']
             series = item['srs'][5:]
@@ -49,7 +50,9 @@ def Schedule():
             india = pytz.timezone('Asia/Kolkata')
             current_time = str(datetime.now(india)).split('+')[0]
             #print(match_time, "....", indian_time, ".....", current_time)
+
             if(current_time < str(match_time)):
+
                 result.append({
                     'match': match,
                     'series': series,
